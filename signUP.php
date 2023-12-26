@@ -24,6 +24,7 @@
                     $p->bindValue(':p',$password);
                     $p->execute();
                     echo 'berhasil';
+                     header('location:login.php');
                 }else{
                     echo 'password tidak cocok';
                 }
